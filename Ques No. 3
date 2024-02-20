@@ -1,0 +1,35 @@
+//Ques 3 Code to Input a chracter array and input special chracters and alphabets and sort the elements according to their ascii value
+#include<stdio.h>
+#include<string.h>
+void sorts(char,int);
+int main()
+{
+char arr[10];'
+int l;
+printf("Enter the special chracters and alphabets in an array\n");
+fgets(arr,10,stdin);
+l=strlen(arr);
+//Remove Newline chracter
+if(arr[l-1]=='\n')
+arr[l-1]='\0';
+l--;
+}
+sorts(arr,l);
+printf("Sorted chracter array %s\n",arr);
+return 0;
+}
+void sorts(char arr,int l)
+{
+int i,j;
+char t;//Temporary Variable to SWAP
+for(i=0;i<l-1;i++){
+for(j=0;j<l-i-1;j++){
+if(arr[j]>arr[j+1]){
+//SWAPPING 
+t=arr[j];
+arr[j]=arr[j+1};
+arr[j+1]=t;
+}
+}
+}
+}
