@@ -9,7 +9,6 @@ int l;
 printf("Enter the special chracters and alphabets in an array\n");
 fgets(arr,10,stdin);
 l=strlen(arr);
-//Remove Newline chracter
 if(arr[l-1]=='\n')
 arr[l-1]='\0';
 l--;
@@ -25,7 +24,6 @@ char t;//Temporary Variable to SWAP
 for(i=0;i<l-1;i++){
 for(j=0;j<l-i-1;j++){
 if(arr[j]>arr[j+1]){
-//SWAPPING 
 t=arr[j];
 arr[j]=arr[j+1};
 arr[j+1]=t;
