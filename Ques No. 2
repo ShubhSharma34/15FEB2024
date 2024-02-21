@@ -1,16 +1,16 @@
 //QUES 2. Code to Input a string containing alphabets and find frequency of each alphabet
 #include<stdio.h>
 #include<string.h>
-void countfreq(char); //FUNCTION DECLRATION
+void countf(char); //FUNCTION DECLRATION
 int main()
 {
 char str[10];
 printf("Enter the string alphabets\n");
 fgets(str,10,stdin);
-countfreq(str);   //FUNCTION CALL
+countf(str);   //FUNCTION CALL
 return 0;
 }
-void countfreq(char str[])
+void countf(char str[])
 {
 int i;
 int f[26]={0};//Taking an array to store the frequency of each alphabet (taking size of array to be 26 )
@@ -19,7 +19,6 @@ if(str[i]>='a'&&str[i]<='z'){
 f[str[i]-'a']++;  //Incrementing the frequency of the alphabet
 }
 }
-//Print the frequency of each alphabet
 for(i=0;i<26;i++){
 if(f[i]>0){
 printf("%c comes %d times\n",'a'+i,f[i]);
