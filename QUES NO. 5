@@ -4,9 +4,9 @@
 int main()
 {
 char ss[1000];
-printf("Enter the multiple lines(press Ctrl+D on a newline to stop)\n");
+printf("Enter the multiple lines\n");
 while(scanf("%[^\n}%*c",ss)==1){
-printf("%s\n"ss);   //DEMONSTRATE THE SENCTANCES
+printf("%s\n"ss);
 }
 return 0;
 }
