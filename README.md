@@ -3,14 +3,13 @@ C Program Codes for 15Feb 2024
 //QUES 1-Code to input a string and check if it is palindrome or not
 #include<stdio.h>
 #include<string.h>
-int ispalin(char);
+int pal(char);
 int main()
 {
 char str[10];
 printf("Enter a string\m");
 fgets(str,10,stdin);
-str[strcspn(str,"\n")]='\0';
-if(ispalin(str)){
+if(pal(str)){
 printf("The String is Palindrome\n");
 else
 {
@@ -18,7 +17,7 @@ printf("The String is not Palindrome\n");
 }
 return 0;
 }
-int ispalin(char str[])
+int pal(char str[])
 {
 int i=0,j;
 j=strlen(str)-1;
